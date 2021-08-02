@@ -6,8 +6,8 @@ const prefix = "!!";
 const girisRoleID = "846429633486520351";
 const uyeRoleID = "846429626372194346";
 let komutlar = {
-	gunaydinmsg: "günaydın ebesini siktiğim",
-	gecemsg: "iyi uykular amcık",
+	gunaydinmsg: "günaydın",
+	gecemsg: "iyi uykular",
 };
 client.on("ready", () => {
 	client.user.setActivity("Created by Adderall", {
@@ -57,16 +57,8 @@ client.on("message", (message) => {
 	} else if (mesaj == "iyi geceler") {
 		message.channel.send(komutlar.gecemsg);
 	} else if (mesaj == "emre" || mesaj == "adderall") {
-		message.channel.send("Büyük üstad usta yazılımcı Adderalle biat edin");
-	} else if (mesaj == "ikarus") {
-		message.channel.send(
-			"Yüce Kudretli " + " " + "<@" + "727853926866616321" + ">"
-		);
-	} else if (mesaj == "güneş" || mesaj == "günes" || mesaj == "gunes") {
-		message.channel.send(
-			"Doğulu vegan" + " " + "<@" + "711692974534295572" + ">"
-		);
-	}
+		message.channel.send("Yaratıcımı tanıyın");
+	} 
 });
 
 client.login("ODQ2NDA1NDc4MjY2ODMwOTE5.YKvChw.5I0wFjxSqpv60JvakA68PkYhs8w");
